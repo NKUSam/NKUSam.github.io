@@ -1,0 +1,56 @@
+/*Î¢ÐÅ¶þÎ¬Âë*/
+.weixin{
+position:relative;
+}
+
+.weixin::after{
+content: url(../images/qrwx.jpg);
+position: absolute;
+right: -28px;
+top: -135px;
+z-index: 99;
+width:120px;
+height: 120px;
+border: 5px;
+border-radius: 4px;
+transform-origin: top right;
+transform: scale(0);
+opacity: 0;
+-webkit-transition: all .4s ease-in-out;
+-o-transition: all .4s ease-in-out;
+transition: all .4s ease-in-out;
+}
+
+.weixin:hover::after{
+transform:scale(1);
+opacity: 1;
+}
+
+
+/*qq¶þÎ¬Âë*/
+.qq{
+position:relative;
+}
+
+.qq::after{
+content: url(../images/qrqq.jpg);
+position: absolute;
+right: -28px;
+top: -135px;
+z-index: 99;
+width:120px;
+height: 120px;
+border: 5px;
+border-radius: 4px;
+transform-origin: top right;
+transform: scale(0);
+opacity: 0;
+-webkit-transition: all .4s ease-in-out;
+-o-transition: all .4s ease-in-out;
+transition: all .4s ease-in-out;
+}
+
+.qq:hover::after{
+transform:scale(1);
+opacity: 1;
+}
